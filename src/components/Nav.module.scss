@@ -1,0 +1,29 @@
+@import '../utils/breakpoints';
+
+.root {
+  width: 100%;
+  background-image: url('../img/white-grad-rev.svg');
+  background-repeat: repeat-x;
+  height: 60px;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  font-size: 12pt;
+
+  a {
+    padding: 0 15px 0 0;
+  }
+
+  .container {
+    width: 80vw;
+    margin: 0 auto;
+    display: block;
+    max-width: 740px;
+    padding: 0 1rem;
+
+    @include media-breakpoint-down(sm) {
+      width: 100vw;
+    }
+
+  }
+}

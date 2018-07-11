@@ -1,0 +1,43 @@
+@import '../utils/_breakpoints.scss';
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+.root {
+  padding: 70px 0;
+  display: block;
+  margin: 0 auto;
+  @include media-breakpoint-up(sm) {
+    padding-top: 80px;
+  }
+
+}
+
+.portrait {
+  max-width: 100%;
+  padding: 0 0 2vh;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0 1rem 1rem 0;
+  }
+
+}
+
+.gridHalf {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+
+  @include media-breakpoint-up(sm) {
+    width: 50%;
+  }
+
+}
+
+
+p {
+  font-family: sans-serif;
+  font-size: 12pt;
+  margin: 0;
+  line-height: 1.5;
+  padding: 0 0 1.5em;
+}
