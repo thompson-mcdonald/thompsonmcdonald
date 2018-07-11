@@ -1,11 +1,12 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import styles from './SiteTop.module.scss';
+import selfie from './../img/self.png'
 
 const SiteTop = () => (
   <div className={`${styles.root}`}>
     <div className={`${styles.gridHalf}`}>
-      <img class={`${styles.portrait}`} alt='Jacob' src='' />
+      <img class={`${styles.portrait}`} alt='Jacob' src={selfie} />
     </div>
     <div className={`${styles.gridHalf}`}>
       <p>Hello. My name is Jacob. I am a designer &amp; developer with 5 years experience.</p>
